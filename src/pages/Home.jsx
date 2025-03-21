@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const Home = () => {
   return (
     <div className="sm:h-[calc(100vh-56px)] h-screen flex flex-col bg-gray-700/25">
@@ -11,12 +11,12 @@ const Home = () => {
         <p className="text-xl max-w-2xl mb-8">
           Connecting people of all faiths through events and community support.
         </p>
-        <a
-          href="/events"
+        <Link
+          to="/events"
           className="px-8 py-4 bg-white text-green-600 font-semibold text-lg rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
         >
           Explore Events
-        </a>
+        </Link>
       </main>
 
       <footer className="text-sm opacity-70 p-4 text-center">
